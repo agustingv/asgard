@@ -1,0 +1,9 @@
+{
+	"name": "asgard",
+	"authors": [
+		"Agustin Garcia Vadillo"
+	],
+	"description": "Another SDL game framework write in D",
+	"copyright": "Agustin Garcia Vadillo <contacto@agustin-garcia.es>",
+	"license": "GPL"
+}
