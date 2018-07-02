@@ -1,15 +1,33 @@
-module source.inputhandler;
+/**
+    This file is part of AsGARD.
+
+    AsGARD is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    AsGARD is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with AsGARD.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+module asgard.inputhandler;
 
 import std.stdio,
        std.typecons;
 import derelict.sdl2.image,
        derelict.sdl2.sdl;
-import source.game,
-       source.vector2d;
+import asgard.game,
+       asgard.vector2d;
 
 /**
   * Mouse button ids
   */
+  // TODO: remove struct
 enum MB
 {
       LEFT = 0,
@@ -17,6 +35,9 @@ enum MB
       RIGHT = 2
 }
 
+/**
+ * Define input handleds. Keyboard, mouse, joystick.
+ */
 class InputHandler
 {
   InputHandler* s_pInstance;

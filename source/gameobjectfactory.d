@@ -1,18 +1,39 @@
-module source.gameobjectfactory;
+/**
+    This file is part of AsGARD.
 
-import source.basecreator,
-       source.gameobject,
-       source.game;
+    AsGARD is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    AsGARD is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with AsGARD.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+module asgard.gameobjectfactory;
+
+import asgard.basecreator,
+       asgard.gameobject,
+       asgard.game;
 
 import std.container.array,
        std.stdio;
 
+/**
+ * Register and create game objects
+ */
 class GameObjectFactory
 {
     public:
 
         /**
          * Sigleton instance
+         * @source: https://wiki.dlang.org/Low-Lock_Singleton_Pattern
          */
         static GameObjectFactory get()
         {
@@ -30,6 +51,12 @@ class GameObjectFactory
            return instance_;
         }
 
+        /**
+         * Register games types objects (EJ: Players or enemies)
+         * @param: string typeID
+         * @param: BaseCreator pCreator
+         * @return: bool
+         */
         bool registerType(string typeID, BaseCreator pCreator)
         {
             if (m_creators.get(typeID,null))

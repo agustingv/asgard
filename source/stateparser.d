@@ -1,10 +1,27 @@
-module source.stateparser;
+/**
+    This file is part of AsGARD.
 
-import source.gameobject,
-       source.texturemanager,
-       source.game,
-       source.loaderparams,
-       source.gameobjectfactory;
+    AsGARD is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    AsGARD is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with AsGARD.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+module asgard.stateparser;
+
+import asgard.gameobject,
+       asgard.texturemanager,
+       asgard.game,
+       asgard.loaderparams,
+       asgard.gameobjectfactory;
 
 
 import std.container.array,
@@ -12,6 +29,9 @@ import std.container.array,
        dyaml,
        std.string;
 
+/**
+ * Parse tilesets files and create textures or objects
+ */
 class StateParser
 {
     public:

@@ -15,20 +15,16 @@
     along with AsGARD.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-module asgard.gamestate;
+module asgard;
 
-/**
- * Define GameState interface
- */
-interface GameState
-{
-    public void update();
-
-    public void render();
-
-    public bool onEnter();
-
-    public bool onExit();
-
-    public string getStateID();
-}
+import asgard.basecreator;
+import asgard.gameobjectfactory;
+import asgard.gamestate;
+import asgard.gamestatemachine;
+import asgard.inputhandler;
+import asgard.layer;
+import asgard.level;
+import asgard.loaderparams;
+import asgard.stateparser;
+import asgard.texturemanager;
+import asgard.vector2d;
