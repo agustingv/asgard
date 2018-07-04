@@ -5,5 +5,22 @@
 	],
 	"description": "Another SDL game framework write in D",
 	"copyright": "Agustin Garcia Vadillo <contacto@agustin-garcia.es>",
-	"license": "GPL"
+	"license": "GPL-3.0",
+	"dependencies": { 
+        "derelict-sdl2": "~>2.1.4",
+        "dyaml": "~>0.6.5"
+    },
+    "configurations": [
+        {
+            "name": "library",
+            "targetType": "library"
+        }
+    ],
+    "importPaths": [
+        "./source"
+    ],
+    "sourcePaths": [
+        "./source"
+    ]
+  
 }

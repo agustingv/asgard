@@ -1,0 +1,10 @@
+{
+	"fileVersion": 1,
+	"versions": {
+		"asgard": {"path":"../"},
+		"derelict-sdl2": "2.1.4",
+		"derelict-util": "2.0.6",
+		"dyaml": "0.6.5",
+		"tinyendian": "0.1.2"
+	}
+}

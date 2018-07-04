@@ -1,0 +1,12 @@
+{
+	"name": "window",
+	"authors": [
+		"Agustín García Vadillo"
+	],
+	"description": "AsGARD examples sdl window",
+	"copyright": "Agustín García Vadillo <contacto@agustin-garcia.es>",
+	"license": "GPL-3.0",
+	"dependencies": {
+        "asgard": "~master"
+    }
+}

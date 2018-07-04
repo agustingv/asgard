@@ -1,0 +1,21 @@
+{
+	"name": "examples",
+	"authors": [
+		"Agustín García Vadillo"
+	],
+	"description": "AsGARD examples",
+	"copyright": "Agustín García Vadillo <contacto@agustin-garcia.es>",
+	"license": "GPL-3.0",
+	"targetType": "none",
+	"configurations": [
+        {
+            "name": "window",
+            "targetType": "executable",
+            "mainSourceFile": "window/source/app.d",
+            "sourcePaths": [ "window/source/", "../source" ],
+            "dependencies": {
+                    "asgard": "~master"
+            }
+        }
+    ]
+}
