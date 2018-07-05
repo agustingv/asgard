@@ -23,4 +23,4 @@ public import derelict.sdl2.sdl;
 public import asgard.gamestatemachine;
 public import asgard.texturemanager;
 public import asgard.gameobject;
-public import asgard.igame;
+public import asgard.iinputhandler;

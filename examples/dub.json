@@ -11,6 +11,8 @@
         {
             "name": "window",
             "targetType": "executable",
+            "targetName": "window",
+            "targetPath": "window/",
             "mainSourceFile": "window/source/app.d",
             "sourcePaths": [ "window/source/", "../source" ],
             "dependencies": {

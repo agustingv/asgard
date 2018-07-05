@@ -43,6 +43,7 @@ int main()
 
     while (game.running())
     {
+     // writeln(game.running());
       frameStart = SDL_GetTicks();
 
       game.handleEvents();
